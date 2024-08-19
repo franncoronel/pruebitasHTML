@@ -1,16 +1,41 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+:root{
+    /* Colores */
+    --color-primario:   #8cb9bd;
+    --color-secundario: #FEFBF6;
+    --color-terciario:  #ECB159;
+    --color-cuaternario:#B67352;
+    --color-bordes:     #cccc;
+    --color-sombra:   rgba(0, 0, 0, 0.136);
+    --color-boton-primario: #5cafb7; 
+    /* Fuentes */
+    --fuente: "Gabarito", sans-serif;
+    --peso-titulo:   900;
+    --peso-texto:    400;
+    /* Tamaños */
+    --ancho-web:        769px;
+    --ancho-min-tablet: 401px;
+    --ancho-max-tablet: 768px;
+    --ancho-mobile:     400px;
+    --ancho-logo-web:   1.5em;
 }
 
 html {
-    font-size: 16;
+    font-size: 16px; /* Referencia para los em */
+}
+
+*{
+    padding:   0;
+    margin:    0;
+    font-family: var(--fuente);
 }
 
 .nav-container {
-    background-color: #6BAF5A;
+    background-color: var(--color-primario);
     height: 5rem;
     color: #FFFFFF;
-    font-size: 2rem;
+    font-size: 1em;
     display: flex;
     justify-content: center;
 }
@@ -23,9 +48,16 @@ html {
     align-items: center;
 }
 
-.logo{
+.logo-container {
     display:flex;
     justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem
+}
+
+.logo {
+    width:2rem;
+    margin-right: 0.2rem;
 }
 
 .usuario{
@@ -33,10 +65,11 @@ html {
     justify-content: flex-end;
     align-items: center;
     font-size: 1rem;
-    padding: 0 0.5rem 0 0;
+    padding: 0 1rem 0 0;
 }
 
 .profile-pic {
-    height: 40px;
-    width:40px
+    height: 2.5rem;
+    width:2.5rem;
+    padding: 0 0.2rem 0 0;
 }
